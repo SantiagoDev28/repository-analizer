@@ -1,8 +1,6 @@
 import { FileMetrics } from '../../domain/value-objects';
 import { RepositoryFile } from '../../domain/value-objects/RepositoryFile';
-
-const ALLOWED_EXTENSIONS = ['.ts', '.js', '.java', '.yml', '.json'];
-const IGNORED_DIRS = ['node_modules', 'dist', 'build'];
+import { ALLOWED_EXTENSIONS, IGNORED_DIRS } from '../config/analizer.config';
 
 export class CodeParser {
   
